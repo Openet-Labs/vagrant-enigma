@@ -1,12 +1,13 @@
 class enigma::extract inherits enigma {
 
 	$my_module_name = "enigma"
-	
+	$base_url = "http://10.0.28.209"
     tarball { "enigma-framework-installer.tgz":
-        module_name => "$my_module_name",
-        install_dir => "/home/vagrant/enigma_installers",
-		user_name   => "vagrant",
-		group_name  => "vagrant",
+        module_name      => "$my_module_name",
+        install_dir      => "/home/vagrant/enigma_installers",
+		tarball_file_url => "$base_url/enigma-framework-installer.tgz",
+		user_name        => "vagrant",
+		group_name       => "vagrant",
     }
 	
 	file { "create downloads dir":
@@ -19,31 +20,35 @@ class enigma::extract inherits enigma {
     } 
 	
 	tarball { "3rdPartyInstallers.tar.gz":
-        module_name => "$my_module_name",
-        install_dir => "/home/vagrant/enigma_installers/enigma-framework-installer/Downloads",
-		user_name   => "vagrant",
-		group_name  => "vagrant",
-		require     => Tarball["enigma-framework-installer.tgz"]
+        module_name      => "$my_module_name",
+        install_dir      => "/home/vagrant/enigma_installers/enigma-framework-installer/Downloads",
+		tarball_file_url => "$base_url/3rdPartyInstallers.tar.gz",
+		user_name        => "vagrant",
+		group_name       => "vagrant",
+		require          => Tarball["enigma-framework-installer.tgz"]
     }
 	tarball { "enigma-FileReader-installer.tgz":
-        module_name => "$my_module_name",
-        install_dir => "/home/vagrant/enigma_installers",
-		user_name   => "vagrant",
-		group_name  => "vagrant",
+        module_name      => "$my_module_name",
+        install_dir      => "/home/vagrant/enigma_installers",
+		tarball_file_url => "$base_url/enigma-FileReader-installer.tgz",
+		user_name        => "vagrant",
+		group_name       => "vagrant",
     }
 	
 	tarball { "enigma-JobsExecutor-installer.tgz":
-	    module_name => "$my_module_name",
-        install_dir => "/home/vagrant/enigma_installers",
-		user_name   => "vagrant",
-		group_name  => "vagrant",
+	    module_name      => "$my_module_name",
+        install_dir      => "/home/vagrant/enigma_installers",
+		tarball_file_url => "$base_url/enigma-JobsExecutor-installer.tgz",
+		user_name        => "vagrant",
+		group_name       => "vagrant",
 	}
 	
 	tarball { "enigma-usecases-installer.tgz":
-	    module_name => "$my_module_name",
-        install_dir => "/home/vagrant/enigma_installers",
-		user_name   => "vagrant",
-		group_name  => "vagrant",
+	    module_name      => "$my_module_name",
+        install_dir      => "/home/vagrant/enigma_installers",
+		tarball_file_url => "$base_url/enigma-usecases-installer.tgz",
+		user_name        => "vagrant",
+		group_name       => "vagrant",
 	}
 	
 	package {
