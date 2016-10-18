@@ -14,6 +14,7 @@ Vagrant.configure(2) do |config|
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "puppetlabs/centos-6.6-64-puppet"
   config.vm.box_version = "1.0.1"
+  config.vm.hostname = "enigma"
   #Dont update the virtual box guest extensions automatically
   config.vbguest.auto_update = false
   
