@@ -57,6 +57,8 @@ This may take a while depending on your internet connection as the `vagrant up` 
     vagrant up
 
 ---
+If your host OS has multiple network interfaces, Ethernet and WiFi for example, you will be prompted to select which one to bridge the VM to.  Make sure you select an interface that has an internet connection as this will be used to download and install packages to when the VM is being setup for the first time.
+
 Now might be a good time to go get a coffee (or even lunch if you have a slow internet connection).
 
 ---
