@@ -54,4 +54,14 @@ class enigma::config inherits enigma {
 		match => '^JAVA_HOME=',
 		line => 'JAVA_HOME=/usr/java/latest',
     }
+	
+	exec { 'install_apache_repo':
+	    command => '/usr/bin/wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo',
+		creates => "/etc/yum.repos.d/epel-apache-maven.repo",
+    }
+	
+	exec { 'update_apache_repo':
+	    command => '/bin/sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo',
+		require => Exec['install_apache_repo'],
+    }
 }
