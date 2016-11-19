@@ -25,13 +25,4 @@ class enigma::install inherits enigma {
 		["apache-maven", "git"] :
 		ensure => installed,
 	}
-	/*
-	exec { 'install_usecases':
-	    command => "bash -c 'source /home/vagrant/enigma/env-enigma && /home/vagrant/enigma_installers/enigma-usecases-installer/bin/install-enigma-usecases.sh'",
-		path    => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin', 
-		require => Exec['install_jobs_executor'],
-		user    => 'vagrant',
-		creates  => "/home/vagrant/enigma",
-    }
-	*/
 }
