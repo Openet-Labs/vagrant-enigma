@@ -78,7 +78,7 @@ Vagrant.configure(2) do |config|
         shell.inline = "mkdir -p /etc/puppet/modules; 
                         (puppet module list | grep maestrodev-ssh_keygen ) || puppet module install maestrodev-ssh_keygen;
                         (puppet module list | grep puppetlabs-stdlib ) || puppet module install puppetlabs-stdlib;
-						(puppet module list | grep puppetlabs-ntp ) || puppet module install puppetlabs-ntp;"
+						(puppet module list | grep puppetlabs-ntp ) || puppet module install puppetlabs-ntp --version 4.2.0;"
     end
   config.vm.provision :puppet do |puppet|
 	puppet.manifests_path = "manifests"
