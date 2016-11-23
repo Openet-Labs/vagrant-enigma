@@ -1,7 +1,7 @@
 class enigma::extract inherits enigma {
 
 	$my_module_name = "enigma"
-	$base_url = "http://10.0.28.209"
+	$base_url = "http://accelerate.openet.com/enigma-files/"
     tarball { "enigma-framework-installer.tgz":
         module_name      => "$my_module_name",
         install_dir      => "/home/vagrant/enigma_installers",
@@ -39,14 +39,6 @@ class enigma::extract inherits enigma {
 	    module_name      => "$my_module_name",
         install_dir      => "/home/vagrant/enigma_installers",
 		tarball_file_url => "$base_url/enigma-JobsExecutor-installer.tgz",
-		user_name        => "vagrant",
-		group_name       => "vagrant",
-	}
-	
-	tarball { "enigma-usecases-installer.tgz":
-	    module_name      => "$my_module_name",
-        install_dir      => "/home/vagrant/enigma_installers",
-		tarball_file_url => "$base_url/enigma-usecases-installer.tgz",
 		user_name        => "vagrant",
 		group_name       => "vagrant",
 	}
