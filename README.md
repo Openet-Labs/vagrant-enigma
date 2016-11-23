@@ -1,13 +1,22 @@
 # vagrant-enigma
 A vagrant based setup project for Openet's Enigma
 
+# Table of Contents
+1. [About Enigma](#about-enigma)
+2. [Installation Instructions](#installation-instructions)
+3. [Install Oracle VirtualBox](#install-oracle-virtualbox)
+4. [Install Vagrant](#install-vagrant)
+5. [Install Required Vagrant plugins](#install-required-vagrant-plugins)
+6. [Windows Users](#windows-users)
+7. [Clone the vagrant-enigma project](#clone-the-vagrant-enigma-project)
+8. [Download a JDK](#download-a-jdk)
+9. [Launch your VM](#launch-your-vm)
+10. [Now do some work](#now-do-some-work)
+11. [Explore](#explore)
+
 ## About Enigma
 Enigma is a Big Data / Machine learning platform. It is based on a collection of Open Sources projects.
 
-* [Apache Hadoop](http://hadoop.apache.org/)
-* [Apache Spark](http://spark.apache.org/)
-* [Apache Zookeeper](http://zookeeper.apache.org/)
-* [Apache Kafka](http://kafka.apache.org/) 
 
 Also included in the installation are 
 * Scripts to managed these components (installation, start/stop etc)
@@ -65,4 +74,8 @@ Now might be a good time to go get a coffee (or even lunch if you have a slow in
 
  
 
+### Now do some work
+Now that you have installed Enigma it's time to have it do something useful.  There is a fully working NFV Predictive Scaling Use Case maintained as a github project by Openet Labs.  You can find this project [here](https://github.com/Openet-Labs/machine-learning).  Follow the link to the Auto Scaling use case to get the source code and the instructions on how to download, build, install, run and test this use case
 
+#### Explore
+If you choose to skip the pre-packaged use case, you can still experiment with Enigma.  You should have a read of the quick user guide setup [here](https://github.com/Openet-Labs/vagrant-enigma/blob/master/UserGuide.md).  This will guide you through the process of starting / monitoring / stopping Enigma and getting your own use cases running
