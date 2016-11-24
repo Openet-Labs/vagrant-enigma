@@ -41,6 +41,11 @@ Now we can start Enigma
     cd bin
     #start Hadoop, Zookeeper and Kafka
     ./start-enigma-framework.sh
+
+#### Accept the End User License Agreement
+The first time you run start-enigma-framework.sh you will be presented with the Enigma EULA. If you accept the terms, type 'accept' and press Enter. Engima will then start.  If you don't want to accept the terms, just press enter and the startup will terminate. 
+
+You will only be presented with the EULA the first time you run start-enigma-framework.sh
     
 Enigma is now running.
 
