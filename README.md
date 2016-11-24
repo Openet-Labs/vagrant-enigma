@@ -13,6 +13,9 @@ A vagrant based setup project for Openet's Enigma
 9. [Launch your VM](#launch-your-vm)
 10. [Now do some work](#now-do-some-work)
 11. [Explore](#explore)
+12. [Known Issues(#known-issues)
+13. [Finished?](#finished)
+14. [Contact us](#contact-us)
 
 ## About Enigma
 Enigma is a Big Data / Machine learning platform. It is based on a collection of Open Sources projects.
@@ -77,5 +80,17 @@ Now might be a good time to go get a coffee (or even lunch if you have a slow in
 ### Now do some work
 Now that you have installed Enigma it's time to have it do something useful.  There is a fully working NFV Predictive Scaling Use Case maintained as a github project by Openet Labs.  You can find this project [here](https://github.com/Openet-Labs/machine-learning).  Follow the link to the Auto Scaling use case to get the source code and the instructions on how to download, build, install, run and test this use case
 
-#### Explore
+### Explore
 If you choose to skip the pre-packaged use case, you can still experiment with Enigma.  You should have a read of the quick user guide setup [here](https://github.com/Openet-Labs/vagrant-enigma/blob/master/UserGuide.md).  This will guide you through the process of starting / monitoring / stopping Enigma and getting your own use cases running
+
+### Finished?
+When you're done exploring you can throw away the VM by running.  
+
+    vagrant destroy
+    
+### Contact us
+If you want to talk to us about production use or support then please visit [http://accelerate.openet.com/enigma/](http://accelerate.openet.com/enigma/}
+
+## Known Issues
+See the up to date list of [known issues](https://github.com/Openet-Labs/vagrant-enigma/issues) on github if you encounter a problem.  If your issue isn't listed there, then create a new one and we'll look into it
+
