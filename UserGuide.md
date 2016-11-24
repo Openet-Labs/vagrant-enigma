@@ -10,7 +10,6 @@ Enigma is composed of 4 major parts
 * [Apache Kafka](http://kafka.apache.org/) 
 
 
-If you 
 
 ## Starting Enigma
 We have configured Enigma with some sensible default values for you, so all you should have to do is run it.
