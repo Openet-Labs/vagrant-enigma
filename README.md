@@ -13,7 +13,7 @@ A vagrant based setup project for Openet's Enigma
 9. [Launch your VM](#launch-your-vm)
 10. [Now do some work](#now-do-some-work)
 11. [Explore](#explore)
-12. [Known Issues(#known-issues)
+12. [Known Issues](#known-issues)
 13. [Finished?](#finished)
 14. [Contact us](#contact-us)
 
