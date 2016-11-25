@@ -1,6 +1,6 @@
 define remote_file($remote_location=undef, $mode='0644'){
   exec{"retrieve_${title}":
-    timeout => 0,
+    
     command => "/usr/bin/wget -q ${remote_location} -O ${title}",
     creates => $title,
   }
