@@ -6,6 +6,13 @@ class enigma::install inherits enigma {
 		user    => 'vagrant',
 		creates => "/home/vagrant/enigma",
     }
+        file_line { 'install_yarnchange':
+		path => '/home/vagrant/enigma/hadoop/hadoop-2.6.0/etc/hadoop/yarn-site.xml',
+		ensure => present,
+		require => Exec['install_framework'],
+		line => "<value>0.0.0.0</value>",
+		match => '<value>enigma</value>',
+    }
 	exec { 'install_file_reader':
 	    command => "bash -c 'source /home/vagrant/enigma/env-enigma && /home/vagrant/enigma_installers/enigma-FileReader-installer/bin/install-enigma-FileReader.sh'",
 		path    => '/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin',
