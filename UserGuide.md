@@ -50,9 +50,18 @@ You will only be presented with the EULA the first time you run start-enigma-fra
 Enigma is now running.
 
 ## View the Hadoop operations pages for YARN and HDFS
-Hadoop HDFS has a web based management app that allows you to see what's going on with HDFS.  You can access this at http://<ip address>: 
 
-YARN has a web based management app that allows you to see what jobs are running and their current status.  You can also see the status of your Spark jobs in this app.  You can access this here http://<ip address>:/
+Replace the ip address below with the ip address of your vm, you can get this by running the following in the vm:
+
+    ifconfig
+
+Hadoop HDFS has a web based management app that allows you to see what's going on with HDFS.  You can access this at:
+
+    http://10.3.18.75:50070/dfshealth.html#tab-overview
+
+YARN has a web based management app that allows you to see what jobs are running and their current status.  You can also see the status of your Spark jobs in this app.  You can access this at:
+    
+    http://10.3.18.75:8088/cluster
 
 
 
